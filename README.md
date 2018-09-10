@@ -4,8 +4,7 @@ http://maven.apache.org/maven-release/maven-release-plugin/examples/non-interact
 
 ```
 mvn release:clean && \
-mvn release:prepare \
-    <!---Dtag=timestamp_relVer \-->
+mvn --batch-mode release:prepare \
     -DreleaseVersion=relVer \
     -DdevelopmentVersion=nextVer-SNAPSHOT
 mvn release:perform
