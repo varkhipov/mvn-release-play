@@ -50,7 +50,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/varkhipov/mvn-release-play.git</connection>
 		<developerConnection>scm:git:https://github.com/varkhipov/mvn-release-play.git</developerConnection>
-	  <tag>2018-09-10_0.2</tag>
+	  <tag>2018-09-10T11:42:29Z_0.2</tag>
   </scm>
 
 </project>
