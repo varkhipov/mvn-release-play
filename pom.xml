@@ -31,7 +31,6 @@
 	<distributionManagement>
 		<repository>
 			<id>release</id>
-			<!--<url>file:///some/absolute/path</url>-->
 			<url>file://${basedir}/localrepo/release</url>
 		</repository>
 		<snapshotRepository>

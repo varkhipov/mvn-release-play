@@ -6,6 +6,17 @@
 	<artifactId>test-child</artifactId>
 	<version>0.1-SNAPSHOT</version>
 
+	<distributionManagement>
+		<repository>
+			<id>release</id>
+			<url>file://${basedir}/../localrepo/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<url>file://${basedir}/../localrepo/snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
