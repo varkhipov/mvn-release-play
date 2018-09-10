@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.test</groupId>
 	<artifactId>test</artifactId>
-	<version>0.3-SNAPSHOT</version>
+	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>test</name>
@@ -19,6 +20,24 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+	<scm>
+		<connection>scm:git:https://github.com/varkhipov/mvn-release-play.git</connection>
+		<developerConnection>scm:git:https://github.com/varkhipov/mvn-release-play.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>release</id>
+			<!--<url>file:///some/absolute/path</url>-->
+			<url>file://${basedir}/localrepo/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<url>file://${basedir}/localrepo/snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<pluginManagement>
@@ -34,23 +53,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<!--<url>file:///some/absolute/path</url>-->
-			<url>file://${basedir}/localrepo/release</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<url>file://${basedir}/localrepo/snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
-
-	<scm>
-		<connection>scm:git:https://github.com/varkhipov/mvn-release-play.git</connection>
-		<developerConnection>scm:git:https://github.com/varkhipov/mvn-release-play.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
 
 </project>
