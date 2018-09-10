@@ -5,7 +5,7 @@
 
 	<groupId>com.test</groupId>
 	<artifactId>test</artifactId>
-	<version>0.5-SNAPSHOT</version>
+	<version>0.5</version>
 	<packaging>pom</packaging>
 
 	<name>test</name>
@@ -24,7 +24,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/varkhipov/mvn-release-play.git</connection>
 		<developerConnection>scm:git:https://github.com/varkhipov/mvn-release-play.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>2018-09-10_0.5</tag>
 	</scm>
 
 	<distributionManagement>
